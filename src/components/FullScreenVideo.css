@@ -1,0 +1,20 @@
+
+.fullscreen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Background for the video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it is on top of everything */
+}
+
+.fullscreen-video .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the full screen without distortion */
+}
+

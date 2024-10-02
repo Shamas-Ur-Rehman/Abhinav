@@ -1,0 +1,159 @@
+/* Navbar initial state */
+.navbar {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.navbar-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* AboutMe.css or Navbar.css */
+.navbar {
+    opacity: 0;
+    transform: translateY(-20px); /* Start off slightly above */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and position */
+}
+
+.navbar-animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Specific animations for different elements */
+.navbar-logo {
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.2s;
+}
+
+.navbar-menu {
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.4s;
+}
+
+.navbar-btn {
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for hidden section */
+.about-section {
+    opacity: 0;
+    transform: translateY(50px); /* Slightly offscreen to create slide-up effect */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the section becomes visible */
+.about-section.animate {
+    opacity: 1;
+    transform: translateY(0); /* Reset to its original position */
+}
+/* Initial state */
+.about-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title Animation */
+.title {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image Slide-in Animation */
+.image-container {
+    opacity: 0;
+    transform: translateX(100px); /* Slide in from the right */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Text Animation with staggered effect */
+.text-content p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.text-content p:nth-child(1) {
+    transition-delay: 0.3s;
+}
+
+.text-content p:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.text-content p:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+.animate-text p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Bullet Point Animation */
+.bullet {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.bullet:nth-child(1) {
+    transition-delay: 0.5s;
+}
+
+.bullet:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+.bullet:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+.bullet:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+.text-content ul .bullet {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Color Accent Transition */
+.number {
+    transition: color 0.5s ease;
+}
+
+.title:hover .number {
+    color: #ff6600; /* Change color when hovering */
+}
+
